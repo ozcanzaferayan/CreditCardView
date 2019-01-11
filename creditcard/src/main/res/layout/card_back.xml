@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ll_cc_back"
+android:layout_width="match_parent"
+android:layout_height="200dp"
+android:orientation="vertical"
+android:visibility="visible">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="25dp"
+    android:background="@color/md_grey_900"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="4"
+        android:layout_marginLeft="10dp"
+        >
+        <EditText android:id="@+id/etCcCvv"
+            style="@style/etCcCvv"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        style="@style/imgCcSimBack" />
+
+    <TextView
+        style="@style/txtCcBackDescription" />
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="imgCcSimBack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/shape_credit_card_sim</item>
+    </style>
+
+    <style name="etCcCvv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:inputType">number</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:text"></item>
+        <item name="android:hint">@string/credit_card_cvc_shadowed</item>
+        <item name="android:textColorHint">@color/md_grey_100</item>
+    </style>
+
+    <style name="txtCcBackDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/credit_card_back_description</item>
+        <item name="android:textSize">5dp</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+    </style>
+</resources>

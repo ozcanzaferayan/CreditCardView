@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="imgCcSim">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/shape_credit_card_sim</item>
+    </style>
+
+    <style name="imgCcLogo">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@android:color/transparent</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+
+    <style name="llCcNumber">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="etCcNumber">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:inputType">number</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:hint">@string/credit_card_number_shadowed_part</item>
+        <item name="android:textColorHint">@color/md_grey_100</item>
+    </style>
+
+    <style name="etCcName">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxWidth">180dp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:inputType">textMultiLine|textCapCharacters</item>
+        <item name="android:hint">@string/credit_card_full_name</item>
+        <item name="android:textColorHint">@color/md_grey_100</item>
+    </style>
+
+
+
+    <style name="etCcExpireMonth">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+        <item name="android:layout_toLeftOf">@id/txtSeperator</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:hint">@string/credit_card_valid_thru_value</item>
+        <item name="android:textColorHint">@color/md_grey_100</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="txtCcSeperator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+        <item name="android:layout_toLeftOf">@id/etCcExpireYear</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:text">@string/slash_seperator</item>
+    </style>
+
+    <style name="etCcExpireYear">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">2</item>
+        <item name="android:hint">@string/credit_card_valid_thru_value</item>
+        <item name="android:textColorHint">@color/md_grey_100</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="txtCcMonthYearTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+        <item name="android:layout_alignTop">@id/etCcExpireMonth</item>
+        <item name="android:layout_marginTop">-10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:text">@string/credit_card_month_year</item>
+    </style>
+
+    <style name="txtCcValidThruTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/md_grey_100</item>
+        <item name="android:layout_alignLeft">@id/etCcExpireMonth</item>
+        <item name="android:layout_alignTop">@id/cc_month_year_title</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">-30dp</item>
+        <item name="android:text">@string/credit_card_valid_thru_title</item>
+    </style>
+</resources>

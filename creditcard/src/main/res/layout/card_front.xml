@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_cc_front"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:visibility="visible">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            style="@style/imgCcSim" />
+        <ImageView
+            android:id="@+id/imgCcLogo"
+            style="@style/imgCcLogo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/llCcNumber">
+        <EditText
+            android:id="@+id/etCcNumber1"
+            style="@style/etCcNumber"/>
+        <EditText
+            android:id="@+id/etCcNumber2"
+            style="@style/etCcNumber"/>
+        <EditText
+            android:id="@+id/etCcNumber3"
+            style="@style/etCcNumber"/>
+        <EditText
+            android:id="@+id/etCcNumber4"
+            style="@style/etCcNumber"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etCcName"
+            style="@style/etCcName"
+            android:imeOptions="actionNext"
+            />
+        <!--                <TextView
+                            android:id="@+id/txtCcExpireDay"
+                            style="@style/txtCcExpireDay" />-->
+
+        <EditText
+            android:id="@+id/etCcExpireMonth"
+            style="@style/etCcExpireMonth" />
+
+        <TextView
+            android:id="@+id/txtSeperator"
+            style="@style/txtCcSeperator" />
+        <EditText
+            android:id="@+id/etCcExpireYear"
+            style="@style/etCcExpireYear" />
+
+        <TextView
+            android:id="@+id/cc_month_year_title"
+            style="@style/txtCcMonthYearTitle" />
+
+        <TextView
+            android:id="@+id/cc_valid_thru_title"
+            style="@style/txtCcValidThruTitle" />
+
+    </RelativeLayout>
+
+</LinearLayout>

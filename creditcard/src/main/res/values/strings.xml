@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CreditCard</string>
+    <string name="credit_card_number_shadowed">&#11044; &#11044; &#11044; &#11044;&#160;&#160;&#11044; &#11044; &#11044; &#11044;&#160;&#160;&#11044; &#11044; &#11044; &#11044;&#160;&#160;&#11044; &#11044; &#11044; &#11044;</string>
+    <string name="credit_card_number_shadowed_part">&#9679;&#9679;&#9679;&#9679;</string>
+    <string name="credit_card_full_name">AD SOYAD</string>
+    <!--<string name="credit_card_valid_thru_value">&#11044;&#11044;/&#11044;&#11044;</string>-->
+    <string name="credit_card_valid_thru_value">&#9679;&#9679;</string>
+    <string name="credit_card_valid_thru_value2">&#9679;&#9679;/&#9679;&#9679;</string>
+    <string name="credit_card_valid_thru_title">valid\nthru</string>
+    <string name="credit_card_month_year">MONTH/YEAR</string>
+    <string name="slash_seperator">/</string>
+    <!--    <string name="credit_card_cvc_shadowed" >&#11044; &#11044; &#11044;</string>-->
+    <string name="credit_card_cvc_shadowed">&#9679; &#9679; &#9679;</string>
+
+    <string name="credit_card_back_description">Bu kart başkasına devredilemez. Kartın kaybolması, çalınması veya bulunması halinde ilgili telefona bilgi verilmesi rica olunur. Kartın kullanımı, sözleşme şartlarına tabidir.</string>
+
+</resources>

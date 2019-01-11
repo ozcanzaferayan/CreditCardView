@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flControlCreditCard">
+
+    <FrameLayout
+            android:id="@+id/card_back"
+            style="@style/fl_card_back">
+        <ImageView
+                android:id="@+id/imgCcBackBackground"
+                style="@style/img_cc_back_background"/>
+        <include layout="@layout/card_back"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/card_front"
+            style="@style/fl_card_front">
+        <ImageView
+                android:id="@+id/imgCcFrontBackground"
+                style="@style/img_cc_front_background"/>
+        <include layout="@layout/card_front"/>
+    </FrameLayout>
+
+
+</FrameLayout>
