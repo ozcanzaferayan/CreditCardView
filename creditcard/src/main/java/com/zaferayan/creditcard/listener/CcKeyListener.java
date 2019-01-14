@@ -40,7 +40,7 @@ public class CcKeyListener implements View.OnKeyListener {
             afterView.requestFocus();
         } else if (editTextId == R.id.etCcCvv && charCount == 3){
             afterView.requestFocus();
-        } else if (charCount == 4 && keyCode != KeyEvent.KEYCODE_DEL) {
+        } else if (charCount == 4 && keyCode != KeyEvent.KEYCODE_DEL && editTextId != R.id.etCcName) {
             afterView.requestFocus();
         }
         return false;

@@ -11,12 +11,15 @@
     <com.zaferayan.creditcard.view.CreditCardView
             android:id="@+id/ccView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
     </com.zaferayan.creditcard.view.CreditCardView>
     <Button
             android:id="@+id/myBtn"
             android:layout_width="match_parent" android:layout_height="wrap_content"
-    android:text="@string/app_name"/>
+            android:background="@color/colorPrimary"
+            android:textColor="@color/md_white_1000"
+            android:text="@string/pay_with_credit_card"/>
 
 </LinearLayout>

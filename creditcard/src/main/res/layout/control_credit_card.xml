@@ -2,8 +2,9 @@
 <FrameLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/flControlCreditCard">
+        android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/flControlCreditCard"
+        tools:context="com.zaferayan.creditcard.view.CreditCardView">
 
     <FrameLayout
             android:id="@+id/card_back"

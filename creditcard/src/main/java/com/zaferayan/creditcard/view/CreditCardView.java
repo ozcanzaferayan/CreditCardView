@@ -2,9 +2,11 @@ package com.zaferayan.creditcard.view;
 
 import android.animation.AnimatorSet;
 import android.content.Context;
+import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -12,7 +14,6 @@ import android.widget.LinearLayout;
 import com.zaferayan.creditcard.R;
 import com.zaferayan.creditcard.listener.CcClickListener;
 import com.zaferayan.creditcard.listener.CcKeyListener;
-import com.zaferayan.creditcard.listener.CcNameToFocusMonthEditorActionListener;
 import com.zaferayan.creditcard.model.CreditCard;
 
 import static com.zaferayan.creditcard.util.AnimUtil.changeCameraDistance;
@@ -57,6 +58,11 @@ public class CreditCardView extends FrameLayout {
         initControl(context, attrs);
     }
 
+    public CreditCardView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr);
+        initControl(context, attrs);
+    }
+
     public CreditCard getCreditCardInfo() {
         String number = etCcNumber1.getText().toString()
                 + etCcNumber2.getText().toString()
@@ -88,11 +94,11 @@ public class CreditCardView extends FrameLayout {
         etCcNumber2.setOnKeyListener(new CcKeyListener(etCcNumber1, etCcNumber3, ccClickListener));
         etCcNumber3.setOnKeyListener(new CcKeyListener(etCcNumber2, etCcNumber4, ccClickListener));
         etCcNumber4.setOnKeyListener(new CcKeyListener(etCcNumber3, etCcName, ccClickListener));
-        etCcName.setOnKeyListener(new CcKeyListener(etCcNumber4, etCcName, ccClickListener));
+        etCcName.setOnKeyListener(new CcKeyListener(etCcNumber4, etCcExpireMonth, ccClickListener));
         etCcExpireMonth.setOnKeyListener(new CcKeyListener(etCcName, etCcExpireYear, ccClickListener));
         etCcExpireYear.setOnKeyListener(new CcKeyListener(etCcExpireMonth, etCvv, ccClickListener));
         etCvv.setOnKeyListener(new CcKeyListener(etCcExpireYear, new View(getContext()), ccClickListener));
-        etCcName.setOnEditorActionListener(new CcNameToFocusMonthEditorActionListener(etCcExpireMonth));
+        etCcName.setRawInputType(InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS);
         detectCardType(etCcNumber1, imgCcFrontBackground, imgCcBackBackground, imgCcLogo);
     }
 
@@ -121,4 +127,8 @@ public class CreditCardView extends FrameLayout {
         flControlCreditCard.setOnClickListener(ccClickListener);
     }
 
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+    }
 }

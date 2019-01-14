@@ -45,9 +45,6 @@
             style="@style/etCcName"
             android:imeOptions="actionNext"
             />
-        <!--                <TextView
-                            android:id="@+id/txtCcExpireDay"
-                            style="@style/txtCcExpireDay" />-->
 
         <EditText
             android:id="@+id/etCcExpireMonth"
