@@ -5,6 +5,30 @@ Android CreditCardView for filling credit card information.
 
 ![CreditCardView in action](https://github.com/ozcanzaferayan/CreditCardView/raw/master/screenshots/video.gif "CreditCardView in action")
 
+## Download
+### Gradle
+
+1. Add Jitpack to respositories section
+
+```gradle
+allprojects {
+  repositories {
+   ...
+   maven { url 'https://jitpack.io' }
+  }
+ }
+```
+
+2. Add the dependency
+
+```gradle
+dependencies {
+     ...
+     implementation 'com.github.ozcanzaferayan:CreditCardView:0.1.0'
+     ...
+ }
+```
+
 ## Usage
 ### XML
 ```xml
